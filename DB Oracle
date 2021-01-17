@@ -1,0 +1,32 @@
+SQL*Plus: Release 11.2.0.2.0 Production on Min Jan 17 12:19:19 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> conn abizar_10073;
+Enter password:
+Connected.
+SQL> desc datamobil;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ KODEM                                     NOT NULL VARCHAR2(5)
+ JENIS                                              VARCHAR2(15)
+ MERK                                               VARCHAR2(15)
+ TARIF                                              VARCHAR2(15)
+ NOPOL                                              VARCHAR2(10)
+
+SQL> desc pelanggan;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ KODEP                                     NOT NULL VARCHAR2(5)
+ NAMA                                               VARCHAR2(30)
+ KONTAK                                             VARCHAR2(30)
+ ALAMAT                                             VARCHAR2(50)
+
+SQL> desc datasewa;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ KODE                                      NOT NULL VARCHAR2(5)
+ KODEP                                              VARCHAR2(5)
+ KODEM                                              VARCHAR2(5)
+ TGL                                                VARCHAR2(10)
+ LAMASEWA                                           VARCHAR2(3)
